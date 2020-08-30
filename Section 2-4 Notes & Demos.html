@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Second Page</title>
+</head>
+<body>
+	<h1>Some Images</h1>
+<p>Hello there!</p>
+<img src="images/book rec.jpg" alt="A book" style="max-width: 200px; height: auto;">
+<!-- inline tag styling not mentioned I added it in because it was too big on screen, same with line break -->
+<br />
+<img src="../../motive.jpg" style="max-width: 175px; height: auto;">
+
+<h2>Some Music</h2>
+<p>Check this out!</p>
+
+<audio controls>
+	<source src="/Users/carolinenolasco/Music/iTunes/iTunes Media/Music/Evanescence/Fallen/01 01 Going Under.mp3" type="audio/mpeg">
+	<source src="/Users/carolinenolasco/Music/iTunes/iTunes Media/Music/Evanescence/Fallen/01 01 Going Under.ogg" type="audio/ogg">
+		<a href="https://open.spotify.com/embed/track/3UygY7qW2cvG9Llkay6i1i">Going Under - Evanescence</a>
+</audio> <br />
+<!-- Embedding wasn't covered but did not have MPG3 of this song online -->
+<iframe src="https://open.spotify.com/embed/track/3UygY7qW2cvG9Llkay6i1i" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+<h2>Videos</h2>
+<p>These videos are cool!!</p>
+<video controls style="max-width: 540px; height: auto;">
+	<source src="/Users/carolinenolasco/Documents/MGS 4 & 5 Cutscenes/MGSV/MGSV BB/Cutscene 67 (Mirror BB).mp4" type="video/mp4">
+	<source src="Cutscene 67 (Mirror BB).webm" type="/video/webm">
+	<source src="Cutscene 67 (Mirror BB).ogv" type="video/ogg">
+		Your browser is outdated and does not support HTML video. Please consider <a href="http://browsehappy.com">updating</a>.
+</video>
+<!-- Inline styling for videos was not mentioned, I just added it in because the video is large
+
+  Mp4, webm, ogg, most popular video files. Older browsers do not support native files, usually require plugins like Adobe FLASH
+
+  Consider resolutions, 1080P may be bad if someone with slow internet speed so gotta detect for it to adjust, or res picker to let them check.
+
+  Custom Ui/Branding concerns, editing colors for player for aesthetics
+
+  Best to just use 3rd party hosting services, easiest, quickest. -->
+
+  <h2>Lists</h2>
+
+  <ul>
+  	<li>Bread</li>
+  	<li>Milk</li>
+  	<li>Cheese</li>
+  </ul>
+
+  <ol>
+  	<li>Wake Up</li>
+  	<li>Exercise</li>
+  	<li>Shower</li>
+  	<li>Breakfast</li>
+  	<li>Groceries</li>
+  </ol>
+
+  <!-- Description list is new to me! <dl> For title, author, page list, etc, boling wasn't mentioned I just added it for clarification -->
+  	<dl>
+  	<dt><strong>Title:</strong></dt>	<!--Description Term -->
+  	<dd>An Imaginary Book</dd> <!-- Actual Description -->
+  	<dt><strong>Author:</strong></dt>
+  	<dd>Caroline</dd>
+  	<dd>Donna</dd>
+  	<dt><strong>Page #:</strong></dt>
+  	<dd>500 Pages</dd>
+
+  	</dl>
+  	<!-- New lesson is NOW talking about bolding and italics, never bother with <b>, stick with <strong>. <em> is for emphasis, but plz avoid <i>, use <dfn> to clarify a word <dfn> means definition -->
+
+  	<p>Lorem ipsum <strong>example strong</strong> dolor sit amet, consectetur adipisicing elit, <em>example emphasis</em> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  	The word <i class="point">tree</i> is typically green.
+
+  	<h2>Special Characters</h2>
+
+  	<ul>
+  <li>Right single quote: &rsquo;</li>
+  <li>Left single quote: &lsquo;</li>
+  <li>Right double quote: &rdquo;</li>
+  <li>Left double quote: &ldquo;</li>
+  <li>Ampersands: &amp;</li>
+  <li>Greater than: &gt;</li>
+  <li>Less than: &lt;</li>
+  <li>Copyright: &copy;</li>
+  <li>Registered symbol: &reg;</li>
+  <li>Trademark symbol: &trade;</li>
+</ul>
+
+</body>
+</html>

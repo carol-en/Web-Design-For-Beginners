@@ -1,0 +1,49 @@
+h1 {
+	width: 90%;
+	color: white;
+	background: orange;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+	box-sizing: border-box;
+}
+
+article {
+	width: 90%;
+	background: lightgray;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+article > p {
+		font-size: 12px;
+}
+article span { color: red; }
+
+
+article > header { padding: 20px;
+background: darkgray; }
+
+.tab {
+	margin: 0 auto;
+	width: 90%;
+	font-size: 10px;
+	background: orange;
+	color: white;
+	text-align: center;
+}
+
+.tab + p {
+	color: green;
+}
+.tab table { margin: auto; }
+
+ .tab td {
+	border: 1px solid white	;
+}
+
+aside p {
+ font-style: italic;
+ font-size: 11px;
+}

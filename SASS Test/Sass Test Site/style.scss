@@ -1,0 +1,66 @@
+
+
+
+	@import 'special-stuff';
+
+
+	html { 
+		background-color: #eee;
+
+		* { box-sizing: border-box; }
+		}
+	
+
+	body {
+			font: 100% $font-norm;
+			color: $text-color;
+			@extend %remove-spacing;
+			line-height: 30px;
+	}
+
+	a { text-decoration: none;
+		color:  darken($color-accent, 30%); }
+
+
+
+	#container {
+		width: 1000px;
+		margin: 0 auto;
+		background: $color-white;
+
+
+			h1, h2, h3 {
+		@extend %remove-spacing;
+		font: $font-special;
+		letter-spacing: 2px;
+		font-weight: normal;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	}
+
+@import 'header';
+
+
+	#wrap {
+		width: 100%;
+		display: flex;
+
+		main { flex: 2;
+		padding: $container-padding;
+		h1 { color: $color-accent; }
+		h2 { text-align: $hr-align-center; } }
+		aside { flex: 1;
+		padding: $container-padding;
+		h1 { color: $color-accent; }
+		background-color: lighten($text-color, 75%);
+		h2 { text-align: $hr-align-center; } }
+	}
+
+	footer {
+		width: 100%;
+		padding: $container-padding;
+		text-align: center;
+		color: lighten($text-color, 40%);
+		background-color: $text-color;
+	}

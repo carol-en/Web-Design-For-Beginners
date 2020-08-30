@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Web Page</title>
+</head>
+<body>
+<header><h1>Welcome to My Page</h1>
+
+<nav>
+<ul>
+<li><a href="#">Index</a> </li>
+<li><a href="#">Ask</a> </li>	
+<li><a href="#">About</a> </li>
+<li><a href="#">Contact</a> </li>
+</ul>	
+</nav>
+
+</header>
+<!--  Nav in header -->
+
+
+<!-- FORMS lecture! -->
+<article>
+	<header><h2>Contact me!</h2></header>
+
+<div class="contact-body">
+<form>
+	<div>
+	<label for="FirstName">First Name: </label>
+	<input type="text" id="FirstName" name="FirstName">	
+
+	<label for="LastName">Last Name: </label>
+	<input type="text" id="LastName" name="LastName">
+
+	<!-- Alternative label association is to have input section WITHIN the label divs so no need for 'for' and ID. But a bit better to use those for more accessibility. -->
+	</div>
+
+	<div>
+	<label for="Email">Email: </label>
+	<input type="email" id="Email" name="Email">
+
+	<label for="Telephone">Telephone: </label>
+	<input type="tel" id="Telephone" name="Telephone">	
+	</div>
+
+	<div>
+	<label for="YourMessage">Your Message:<br> </label>
+	<textarea id="YourMessage" name="YourMessage">	
+	</textarea>
+	</div>
+
+	<div>
+		<label> What is your favorite Color? 
+			<select name="FavoriteColor">
+				<option value="Color">Color</option>
+				<option value="ColorRed">Red</option>
+				<option value="ColorOrange">Orange</option>
+				<option value="ColorYellow">Yellow</option>
+			</select>
+		</label>
+	</div>
+
+	<!-- Alternate labeling for Select!!! -->
+
+		<div>
+		<label for="FavoriteAnimal"> What is your favorite Animal? </label>
+			<select name="FavoriteAnimal" id="FavoriteAnimal">
+				<option value="Animal">Animal</option>
+				<option value="AnimalWolf">Wolf</option>
+				<option value="AnimalShark">Shark</option>
+				<option value="AnimalLion">Lion</option>
+			</select>
+	</div>
+
+	<fieldset>
+		<legend>What is your favorite meal?</legend>
+		<label for="Breakfast">Breakfast</label>
+     	<input type="radio" name="FavoriteMeal" id="Breakfast" value="BREAKFAST">
+     	<label for="Brunch">Brunch</label>
+     	<input type="radio" name="FavoriteMeal" id="Brunch" value="BRUNCH">
+     	<label for="Lunch">Lunch</label>
+     	<input type="radio" name="FavoriteMeal" id="Lunch" value="LUNCH">
+	</fieldset>
+
+	<fieldset>
+		<legend>Which meals do you enjoy? (Check all that apply.)</legend>
+		<label for="Breakfast">Breakfast</label>
+     	<input type="checkbox" name="FavoriteMeal" id="Breakfast" value="BREAKFAST">
+     	<label for="Brunch">Brunch</label>
+     	<input type="checkbox" name="FavoriteMeal" id="Brunch" value="BRUNCH">
+     	<label for="Lunch">Lunch</label>
+     	<input type="checkbox" name="FavoriteMeal" id="Lunch" value="LUNCH">
+	</fieldset>
+
+
+	<div>
+	<input type="submit" value="Submit">
+	</div>	
+</form>
+
+</div>  <!-- End contact-body div -->
+
+</article>
+
+
+
+<article>
+<header>
+<h2>Hi 2</h2>
+Posted Jul 15th
+</header>
+
+
+<!-- This lesson is about comments SOOOO
+
+REALLY GOOD TO ADD TO THE END OF EVERY DIVS -->
+<div class="article-body">
+			<p> Lorem <span class="brand-color">ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+
+<section>
+<h1>Sub Section 1</h1>
+<p>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+
+     <section>
+<h1>Sub Section 2</h1>
+<p>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     </section>
+</section>
+
+<!-- Sections can be nested, also in sections rather than uses h1, h2, h3, h4, you can simply use (ONly) <h1> and within each section it will become small to denote the sub-section. H2, H3...etc can still be used instead. Up for debate and preference really. -->
+
+</div>
+
+<footer>
+<p>Posted in Photos No Comments</p>
+</footer>
+</article>
+
+
+<article>
+<header>
+<h2>Hi 1</h2>
+Posted Jun 4
+</header>
+
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+
+<aside>
+<h3>Glossary</h3>
+
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+</aside>
+
+<footer>
+<p>Posted in Photos No Comments</p>
+</footer>
+</article>
+
+
+<aside>
+<h1>Sidebar</h1>
+
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+</aside>
+
+
+
+
+<footer>Copyright 2018</footer> 
+</body>
+</html>

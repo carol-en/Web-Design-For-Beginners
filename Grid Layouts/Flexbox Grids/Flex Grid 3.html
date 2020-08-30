@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Welcome To My Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style>
+
+			* { box-sizing: border-box; margin: 0; padding: 0; }
+			html { background: #fff; }
+			body { 
+				font-family: "Open Sans", Arial;
+				font-size: 15px;
+				line-height: 25px;
+				 }
+
+		img { max-width: 100%; height: auto; }	
+		a { text-decoration: none; }
+
+
+		.wrap { 
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 20px 20px;
+		 }
+
+		 .wrap article p, .wrap aside p  { color: #474646; }
+
+		 #container {
+		 	display: flex;
+		 	flex-flow: column wrap;
+		 	overflow: hidden;
+		 }
+
+             /* HEADER AREA */
+
+		header {
+			background: #bddb6b;
+			color: #fff;
+			text-align: center;
+			width: 100%;
+		}
+
+		header h1, article h2, article h3 {
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			padding: 5px 0;
+			font-weight: normal;
+		}
+
+		header p { font-style: italic; padding: 10px 0; }
+
+		.phone-hide { display: none; }
+
+		nav { margin-top: 20px; }
+		.navigate {
+			display: flex;
+			justify-content: center;
+			flex-flow: column wrap;
+		}
+
+		ul.navigate { list-style: none; }
+		.navigate li {
+			display: block;
+			text-transform: uppercase;
+			font-size: 80%;
+		}
+		.navigate li a {
+			color: #fff;
+			display: block;
+			background: #000;
+			margin-top: 1px;
+			padding: 15px 0;
+			width: 100%;
+		}
+		.navigate li a:hover 
+		{  color: #000;
+		  	background: #fff;
+		 }
+
+             /* END HEADER AREA */
+
+               /* CONTENT AREA */
+
+
+
+
+        article h2 {
+        	text-align: center;
+        	padding: 20px 0;
+        }
+
+        .main {
+        	background: #fff;
+        }
+
+        .main article {margin-bottom: 10px; }
+
+
+        .keys {
+        	display: flex;
+        	flex-flow: column wrap;
+        }
+        .key {
+        	background: #deff87;
+        	border: 1px solid #7b9145;
+        	padding: 20px 15px;
+        	margin-top: 10px;
+        }
+
+        .mini { 
+        	font-size: 80%; 
+        	text-align: center; 
+        	padding: 10px; 
+        	display: flex;
+        	flex-flow: row nowrap;
+        }
+        .phone-hide-a { display:none; }
+
+        .flow {
+        	display: flex;
+        	flex-flow: row nowrap;
+        	justify-content: space-between;
+        	margin-right: -20px;
+        }
+
+        .flow figure {
+        	flex: 1;
+        	padding-right: 20px;
+        }
+
+               /* END CONTENT AREA */
+
+
+               /*  SIDE AREA */
+
+        .side aside {
+        	background: #fbfcf9;
+        	padding: 20px;
+        }
+
+        .side aside img {
+        	display: block;
+        	margin: 0 auto;
+        	padding: 5px;
+        }
+
+               /*  END SIDE AREA */ 
+
+               /*  FOOTER AREA */            
+
+    	footer { 
+    		background: #fcfcfc;
+    		width: 100%;
+    		font-size: 80%;
+    		color: #969494;
+    		text-align: center;
+    		padding: 20px 0;
+    	}
+
+               /*  END FOOTER AREA */  
+
+
+
+               /*  TABLET CODING */
+
+@media screen and (min-width: 568px) {
+
+			.phone-hide { display: initial; }
+
+			.navigate {
+				flex-flow: row wrap;
+				margin-right: -30px;
+			}
+
+			.navigate li {
+				width: 50%;
+				justify-content: space-between;
+				padding-right: 30px;
+			}
+
+
+			.keys {
+				flex-flow: row wrap;
+				margin-right: -30px;
+			}
+
+			.key { 
+				margin-bottom: 20px;
+				 }
+			.row { width: 50%;
+				justify-content: space-between;
+				padding-right: 30px; }
+
+
+			.flow { margin-right:-30px; }
+			.flow figure { padding-right: 30px; }
+
+			.side aside img { padding: 20px; }
+}
+
+               /*  END TABLET CODING */
+
+
+               /*  MED LAPTOP CODING */               
+
+@media screen and (min-width: 1024px)  {
+
+		#container {
+
+			flex-flow: row nowrap;
+			align-content: space-around;
+		}
+		.main { flex: 2;}
+		.side { flex: 1; }
+		.side { padding-left: 20px; }
+		header .wrap { padding: 20px 20px 0 20px; }
+		.navigation { margin-right: 0; }
+		.navigate li { flex: 1; padding-right: 0;}
+		.mini { line-height: 25px; }
+		.phone-hide-a {display: initial;}
+		.inner-mini { padding: 20px; }
+
+
+
+}
+
+
+
+               /*  END MED LAPTOP CODING */ 
+
+               /*  LRG LAPTOP CODING */
+
+@media screen and (min-width: 1280px) {
+
+        body { font-size: 110%;}      
+		.wrap { max-width: 1200px; padding: 40px 0 20px 0;}
+		header .wrap { padding: 40px 0 0 0; }
+		header h1 { margin-bottom: 20px; }
+		.main { flex: 3; line-height: 40px;  }
+		.side { font-size: 85%; line-height: 30px; }
+		.keys { margin-bottom: 20px; }
+		.row {flex: 1;}
+		article h2 { padding: 30px 0; }
+		footer { padding: 40px 0; }
+}
+
+                /*  END LRG LAPTOP CODING */                            
+		</style>
+</head>
+
+<body>
+	<header> <!-- HEADER -->
+		<div class="wrap"> <!-- WRAP -->
+		<h1>Welcome To My Blog!</h1>
+		<p class="phone-hide">Feel free to take a look around!</p>
+		<nav> <!-- NAVIGATION --> 
+			<ul class="navigate">
+				<li><a href="">Home </a></li>
+				<li><a href="">About </a></li>
+				<li><a href="">Portfolio </a></li>
+				<li><a href="">Resume </a></li>
+				<li><a href="">Social Media </a></li>
+				<li><a href="">Contact </a></li>
+			</ul>
+		</nav> <!-- END NAVIGATION -->
+		</div> <!-- /WRAP -->
+	</header> <!-- /HEADER -->
+
+
+		<div class="wrap"> <!-- WRAP -->
+	<div id="container">			 
+	<section class="main"> <!-- MAIN AREA -->
+		<article> <!-- WELCOME -->
+
+			<h2>What Would you Like to Know?</h2>
+			<p><strong>Main area here.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		</article> <!-- END WELCOME -->
+
+		<article>  <!-- KEYS -->
+
+		<div class="keys">
+
+			<div class="row">
+			<div class="key">Keyword 1</div>
+			</div>
+			<div class="row">
+			<div class="key">Keyword 2</div>
+			</div>
+			<div class="row">
+			<div class="key">Keyword 3</div>
+			</div>
+			<div class="row">
+			<div class="key">Keyword 4</div>
+			</div>
+		</div> 
+
+		</article> <!-- END KEYS -->
+
+		<article class="flow"> <!-- GAMORA IMAGES -->
+			<figure>
+			<img src="https://66.media.tumblr.com/82af113252e4370605ff80ade1859d22/tumblr_paukx7Q9gy1xsb7cao1_r1_540.jpg">
+			</figure>
+
+			<figure>
+			<img src="https://66.media.tumblr.com/240096f8820eb1e9d62161a9dce41ab3/tumblr_paukx7Q9gy1xsb7cao5_r1_540.jpg">
+			</figure>
+		</article> <!-- END GAMORA IMAGES -->
+
+
+		<article> <!-- ARTICLE 2 -->
+
+			<h2>Second Post</h2>
+			<p><strong>Main area here.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		</article> <!-- END ARTICLE 2 -->
+
+				<article> <!-- ARTICLE 3 -->
+
+			<h2>Third Post</h2>
+			<p><strong>Main area here.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		</article> <!-- END ARTICLE 3 -->
+
+		<article>  <!-- TRIPLE MINI ARTICLES -->
+			
+				<div class="mini">
+			<div class="inner-mini phone-hide-a">
+			<h3>Mini Article</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="inner-mini phone-hide-a">
+			<h3>Mini Article</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="inner-mini phone-hide-a">
+			<h3>Mini Article</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div> <!-- /MINI DIV -->
+		</article>  <!-- END TRIPLE MINI ARTICLES -->
+
+	</section> <!-- END MAIN AREA -->
+
+	<section class="side"> <!-- SIDE AREA -->
+
+		<aside>
+		<p><strong>This is the sidebar.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<figure>
+			<img src="https://66.media.tumblr.com/d623e3e302654680fee8288d13bebe02/tumblr_paukx7Q9gy1xsb7cao2_540.jpg">
+		</figure>
+
+		</aside>
+	</section> <!-- END SIDE AREA -->
+			</div> <!-- /CONTAINER -->
+		</div> <!-- /WRAP -->
+	
+	<footer> <!-- FOOTER -->
+		<p>Copyright 2018.</p>
+	</footer> <!-- END FOOTER -->
+
+</body>
+</html>

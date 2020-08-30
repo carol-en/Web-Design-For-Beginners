@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FLEXBOX LAYOUT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+
+
+		/*  SMART PHONE / DEFAULT */
+
+	* { box-sizing: border-box; }
+	body {  font-size: 15px;   line-height: 30px; background: #e2eaf4; }
+
+	.container {  padding: 10px; max-width: 960px; }
+
+	.child, .one, .two {
+  		font-family: "Open Sans", Arial;
+  		color: #FFF;
+  		text-align: center;
+  		background: #3794fe;
+  		border-radius: 6px;
+  		padding: 20px;
+  		margin-bottom: 10px;
+}
+
+	.child, .one, .two {
+  		width: 100%;
+}
+
+	.container h2 { text-transform: uppercase; }
+
+		/*  	END SMART PHONE / DEFAULT */
+
+
+		/* FOR TABLETS */
+
+@media screen and (min-width: 767px)  {
+			.container {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+			}
+
+			.child {
+
+				width: 100%; 
+			}
+
+			 .one, .two {
+				flex: 1;
+				margin-bottom: 0;
+			}
+			.one { margin-right: 10px; }
+}
+
+
+		/* FOR MED LAPTOPS */
+
+@media screen and (min-width: 1024px) {
+			.container {
+				margin: 0 auto;
+				padding: 20px 40px;
+			}
+
+			.one { flex: 2; }
+			.two { flex: 1; }
+			.one, .two { text-align: left; }
+}
+
+		/* END FOR MED LAPTOPS */
+
+
+		/* END FOR LARGE LAPTOPS */
+
+@media screen and (min-width: 1280px) {
+			.container {
+				max-width: 1200px;
+				font-size: 17px;
+				line-height: 40px; 
+			}
+}
+
+		/* END FOR LARGE LAPTOPS */
+
+	</style>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="child">
+  	<article>
+  		<h2>Child</h2>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+  	</article>
+
+
+  </div> <!-- / child -->
+
+
+
+
+  <div class="one">
+  	<article>
+  		<h2>Child</h2>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+  	</article>
+
+
+  </div> <!-- / one -->
+
+
+
+
+  <div class="two">
+  	<article>
+  		<h2>Child</h2>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+  	</article>
+
+
+  </div> <!-- / two -->
+
+
+
+
+</div> <!-- /CONTAINER -->
+
+
+</body>
+</html>

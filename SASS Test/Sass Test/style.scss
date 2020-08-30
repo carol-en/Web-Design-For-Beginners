@@ -1,0 +1,34 @@
+	body {
+		background-color: #ccc;
+
+
+
+		p {
+			color: red;
+		}
+	}
+
+
+	nav {
+
+		ul {
+			list-style: none;
+		}
+
+		ul:before, ul:after
+		{
+			clear: both;
+			display: block;
+			content: "";
+			 }
+
+		li { float: left;
+			margin-right: 10px; }
+
+		a {
+			display: block;
+			padding: 10px 20px;
+			background-color: red;
+			text-decoration: none;
+		}
+	}

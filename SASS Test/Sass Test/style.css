@@ -1,0 +1,21 @@
+body {
+  background-color: #ccc; }
+  body p {
+    color: red; }
+
+nav ul {
+  list-style: none; }
+nav ul:before, nav ul:after {
+  clear: both;
+  display: block;
+  content: ""; }
+nav li {
+  float: left;
+  margin-right: 10px; }
+nav a {
+  display: block;
+  padding: 10px 20px;
+  background-color: red;
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+	header {
+
+	width: 100%;
+	text-align: center;
+	h1 { color: $color-accent;  }
+		nav {
+			width: 100%;
+			background-color: #000;
+			font: 90% $font-special;
+			text-transform: uppercase;
+
+		ul {
+			@extend %remove-spacing;
+			list-style: none;
+		}
+
+		ul:before, ul:after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+
+		li { 
+			float: left; }
+
+		li a {
+			display: block;
+			padding: 10px 20px;
+			color: $color-white;
+			background: $color-black;
+			@include transition(0.5s);
+		}
+
+		li a:hover {
+			color: $color-black;
+			background: $color-white;
+		}
+		}
+	.hrgroup { padding: $container-padding; }
+
+	}

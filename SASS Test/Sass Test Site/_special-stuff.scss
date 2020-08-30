@@ -1,0 +1,19 @@
+
+
+
+		$font-norm: helvetica, arial, sans-serif;
+		$font-special: 'Open Sans', helvetica, arial, sans-serif;
+		$color-accent: #2dd6ed;
+		$text-color: #3a3a3a;
+		$color-white: #fff;
+		$color-black: #000;
+		$container-padding: 20px;
+		$hr-align-center: center;
+
+		@mixin transition($property) {
+			transition: $property ease-in-out;
+		}
+
+
+
+		%remove-spacing { margin: 0; padding: 0; }

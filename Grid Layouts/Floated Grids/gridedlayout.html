@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Grided Layout</title>
+</head>
+
+<style>
+* { box-sizing: border-box; }
+body { 
+	padding: 0;
+	margin: 0; 
+	background: #FFFB85;
+	font-family: 112%;
+	line-height: 30px;
+}
+
+
+.wrap { width: 75%; background: #fff; margin: 20px auto; padding: 10px; }
+
+.wrap:before,
+.wrap:after,
+.clear:before,
+.clear:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.flowing { width: 100%; float: left; }
+
+.side-0 { background: #FFCA61;  }
+.side {  background: blue;}
+.side-2 {  background: gray;}
+.side-3 { background: #FA5B75; }
+.side-4 {  background: #F9F8EB; }
+.side-5 { background: #76B39D;}
+
+.wrap section { padding: 20px; }
+section.clear { padding: 0; }
+
+   .buttons {
+   		background: #C83B3B;
+   		display: block;
+   		padding: 10px 20px;
+   		color: #fff;
+   		border: 1px solid #A42127;
+   		margin-top: 5px;
+   		text-transform: uppercase;
+   		font-size: 70%;
+   		text-align: center;
+   }
+
+
+   .row { width: 100%; margin: auto; }
+
+
+
+@media only screen and (min-width: 1025px) {
+.side-0 { width: 8.33%; }
+.side { width: 50%; }
+.side-2 { width:25%; background: gray;}
+.side-3 { width: 8.33%; }
+.side-4 { width: 58.33%; }
+.side-5 { width: 41.66%; }
+</style>
+
+<body>
+
+
+
+<main class="wrap">
+<div class="flowing side-0">1</div>
+<div class="flowing side-0">2</div>
+<div class="flowing side-0">3</div>
+<div class="flowing side-0">4</div>
+<div class="flowing side-0">5</div>
+<div class="flowing side-0">6</div>
+<div class="flowing side">1</div>
+<div class="flowing side-2">8</div>
+<div class="flowing side-3">9</div>
+<div class="flowing side-3">10</div>
+<div class="flowing side-3">11</div>
+</main>
+
+<main class="wrap">
+
+	<div class="flowing side-4">
+	<section>	
+
+	Main Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<section class="clear">
+   			<article class="row">
+   		<div class="butt-6 butt-2">
+
+   			<div class="buttons">Button 1</div>
+   		</div> <!-- END BUTT CLASS -->
+
+
+   		<div class="butt-6 butt-2">
+
+
+   			<div class="buttons">Button 2</div>
+   		</div> <!-- END BUTT CLASS -->
+
+
+   		<div class="butt-6 butt-2">
+
+   			<div class="buttons">Button 3</div>
+   		</div> <!-- END BUTT CLASS -->
+
+
+
+   		<div class="butt-6 butt-2">
+
+   			<div class="buttons">Button 4</div>
+   		</div> <!-- END BUTT CLASS -->
+
+
+
+   		<div class="butt-6 butt-2">
+
+   			<div class="buttons">Button 5</div>
+   		</div> <!-- END BUTT-6 CLASS -->
+
+
+   			</article>
+
+
+   		</section>
+
+</section>
+</div>
+	<div class="flowing side-5">
+<section>
+		Side Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</section>
+</div>
+
+	</main>
+
+
+</body>
+</html>
